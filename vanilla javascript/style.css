@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background:   #dedfdf  ;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    text-align: center;
+    background: rgb(24, 8, 8);
+    padding: 5em;
+}
+
+header h1{
+    color: yellow;
+    font-size: 90px;
+}
+
+main{
+    text-align: center;
+    margin-top: 5em;
+}
+
+.showcase h2{
+    font-size: 30px;
+    position: relative;
+}
+
+.showcase h2::after{
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 5px;
+    background: yellow;
+    margin-top: 45px;
+    margin-left: -110px;
+    border-radius: 2px;
+}
+
+.mainProject{
+    margin-left: 65px;
+}
+
+.mainShowcase{
+    margin-top: 5em;
+    display: grid;
+    grid-template-columns: repeat(3,34%);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project{
+    width: 27vw;
+    height: 20vw;
+    background: url("./assest/color\ flipper.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 4px 4px 4px 4px rgba(116, 116, 116, 0.219);
+}
+
+.project:nth-child(2){
+    background: url("./assest/counter.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project:hover{
+    cursor: pointer;
+}
+
+.project h3{
+    background: rgba(236, 236, 97, 0.945);
+    padding: 1em;
+    margin-top: 12.4em;
+    color: rgba(31, 29, 29, 0.849);
+}
+
+.projectTwo{
+    width: 27vw;
+    height: 20vw;
+    background: blue;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 4px 4px 4px 4px rgba(116, 116, 116, 0.219);
+}
+
+.projectTwo h3{
+    background: rgba(236, 236, 97, 0.945);
+    padding: 1em;
+    margin-top: 12.4em;
+    color: rgba(31, 29, 29, 0.849);
+}
